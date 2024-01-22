@@ -934,6 +934,7 @@ Secret-код клиента: вставьте сохраненный Client sec
 
 Pi-Hole
 
+```
 version: "3"
 
 services:
@@ -954,3 +955,5 @@ services:
     cap_add:
       - NET_ADMIN
     restart: unless-stopped
+```
+
