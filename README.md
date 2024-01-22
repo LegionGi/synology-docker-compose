@@ -25,6 +25,7 @@
 * [Uptime Kuma](#uptime-kuma)
 * [Vaultwarden](#vaultwarden)
 * [Wallabag + MariaDB + Redis](#wallabag)
+* [Pi-Hole](#pihole)
 
 ## Glances <a name="glances"></a>
 
@@ -931,8 +932,9 @@ Secret-код клиента: вставьте сохраненный Client sec
 ```
 
 
-
-Pi-Hole
+## Pi-Hole <a name="pihole"></a>
+Я создаю новый каталог под названием “pihole” в каталоге Docker.
+Затем я перехожу в новый каталог и создаю две папки “etc-pihole” и “etc-dnsmasq.d”:
 
 ```
 version: "3"
@@ -957,3 +959,5 @@ services:
     restart: unless-stopped
 ```
 
+Если будет ошибка 403, в доступе отказано, прописать свой ip:
+FTLCONF_LOCAL_IPV4	<Host's IP>
